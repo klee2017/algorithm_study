@@ -29,11 +29,21 @@ public class FindKimInSeoul {
 	}
 	
 	public static void main(String[] args) {
-		String[] seoul = {"Jane", "Kim"};
+//		String[] seoul = {"Jane", "Kim"};
+		String[] seoul = {"Queen", "Tod", "Kim"};
 		
 		FindKimInSeoul fks = new FindKimInSeoul();
 		String positionKim = fks.solution(seoul);
 		System.out.println(positionKim);
 	}
 	
+	/*
+	 * python 풀이 추가
+	 * def findKim(seoul):
+	 * 		kimIdx= seoul.index('Kim')
+	 * 		return "김서방은 {}에 있다".format(kimIdx)
+	 * 
+	 * 테스트 코드
+	 * print(findKim(["Queen", "Tod", "Kim"]))
+	 */
 }
